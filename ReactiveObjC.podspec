@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
-  s.name         = "ReactiveObjC"
-  s.version      = "3.1.1"
+  s.name         = "ReactiveObjC-fyFork"
+  s.version      = "0.0.1"
   s.summary      = "The 2.x ReactiveCocoa Objective-C API: Streams of values over time"
 
   s.description  = <<-DESC.strip_heredoc
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.documentation_url  = "https://github.com/ReactiveCocoa/ReactiveObjC/"\
                          "tree/master/Documentation#readme"
 
-  s.author             = "ReactiveCocoa"
+  s.author             = { 'feiyu002' => 'pang_fengyue@126.com' }
   s.social_media_url   = "https://twitter.com/ReactiveCocoa"
 
   s.ios.deployment_target     = "8.0"
@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target    = "9.0"
 
-  s.source = { git: "https://github.com/ReactiveCocoa/ReactiveObjC.git",
+  s.source = { git: "https://github.com/feiyu002/ReactiveObjC-fyFork.git",
                tag: s.version }
 
   s.source_files          = "ReactiveObjC/*.{h,m,d}",
                             "ReactiveObjC/extobjc/*.{h,m}"
-
+  s.resource_bundles      = {'ReactiveObjC-fyFork' => ['ReactiveObjC/Resources/PrivacyInfo.xcprivacy']}
   s.private_header_files  = "**/*Private.h",
                             "**/*EXTRuntimeExtensions.h",
                             "**/RACEmpty*.h"
